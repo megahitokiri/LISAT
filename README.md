@@ -8,16 +8,16 @@ Original Image:
 
 ![image](https://user-images.githubusercontent.com/33765093/141840299-70f1f6df-68bd-45f4-bf0b-3cb06f409250.png)
 
-Binarization:
+Binarization:\
 ![image](https://user-images.githubusercontent.com/33765093/141840407-de593c3d-0066-41f7-b4f2-b34c6d108764.png)
 
-BW_Masking:
+BW_Masking:\
 ![image](https://user-images.githubusercontent.com/33765093/141840460-db43b6b4-cfc4-4f1d-bc2f-c5241e535dc1.png)
 
-Mask Extraction from Original and overmask reduction:
+Mask Extraction from Original and overmask reduction:\
 ![image](https://user-images.githubusercontent.com/33765093/141840519-a29a69b0-b707-4d56-8598-863316d2f524.png)
 
-Trinary transformation:
+Trinary transformation:\
 ![image](https://user-images.githubusercontent.com/33765093/141840606-542a2b8e-818d-4544-b5f9-1b02066fbe28.png)
 
 Border detection for extraction:
