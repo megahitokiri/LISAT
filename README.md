@@ -5,4 +5,5 @@ Matlab running code. Is necessary to have the matlab Image Processing Toolbox in
 
 Steps:
 Original Image:
-![Susceptible](https://user-images.githubusercontent.com/33765093/141840157-65e608d3-2f8c-4b21-b6c2-2c0e5d53794e.jpg)
+![image](https://user-images.githubusercontent.com/33765093/141840299-70f1f6df-68bd-45f4-bf0b-3cb06f409250.png)
+
