@@ -410,8 +410,9 @@ for k = 1 : numberOfImagesToProcess
 	xlim([0 255]); 
 	
     %Save results file
-    imwrite(getframe(gcf).cdata, strcat('results/','RGB_results_',tif_image_name),'tif')
-
+    RGB_save_image = getframe(gcf).cdata;
+    imwrite(RGB_save_image, strcat('results/','RGB_results_',tif_image_name),'tif')
+    pause(1);
 end
 
 % Crop off any unassigned values:
@@ -722,8 +723,6 @@ title('RGB/Trinary Image','FontSize', fontSize);
     %White Cluster
     white_cluster = leaf .* uint8(LAB_WhitePixels);
     white_cluster_gray = rgb2gray(white_cluster);
-    backgroundPixels = white_cluster_gray == 0;
-         count_background = sum(backgroundPixels(:));
     whitePixels = white_cluster_gray > 0; % Produces a binary (logical) image.
          count_white = sum(whitePixels(:));
 
@@ -733,7 +732,14 @@ title('RGB/Trinary Image','FontSize', fontSize);
     greenPixels = green_cluster_gray > 0;
         count_green = sum(greenPixels(:));
     
+    %background
+%    background_cluster = greenPixels+whitePixels;
+%    backgroundPixels = background_cluster == 0;
+%        count_background = sum(backgroundPixels(:));
+
 leaf_area_LAB_pixels = (count_green + count_white);
+    cm_to_pixels = 450;
+leaf_area_LAB_pixels_CM = leaf_area_LAB_pixels * (1/cm_to_pixels)^2;
 
 %Percentage calculation
 Green_percentage_LAB = (count_green/leaf_area_LAB_pixels)*100;
@@ -757,6 +763,8 @@ subplot(2, 3, 6);
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     fileID = fopen(strcat(image_name,'.txt'),'a');
         fprintf(fileID,strcat('Leaf_',string(k),' infection percentage: %6.2f'),White_percentage_LAB);
+        fprintf(fileID,'.\n');
+        fprintf(fileID,strcat('Leaf_',string(k),' Total Area (CM2): %6.2f'),leaf_area_LAB_pixels_CM);
         fprintf(fileID,'.\n');
     fclose(fileID);
 
