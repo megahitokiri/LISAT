@@ -31,3 +31,8 @@ Segmentation and trinary segmentation:\
 
 Analysis per n.. leaves:\
 ![image](https://user-images.githubusercontent.com/33765093/141840858-5bd3f3c4-cc22-4065-a5c5-dee293cfdf27.png)
+
+Leaf 2 (example) Sectoring and Clasification
+![leaf_2](https://github.com/megahitokiri/LISAT/assets/33765093/b8f87004-ca72-494d-9c7d-6e68186ccd80)
+
+![leaf_2_sectors](https://github.com/megahitokiri/LISAT/assets/33765093/3888af50-aa36-4707-978f-2fbc8e72f319)
