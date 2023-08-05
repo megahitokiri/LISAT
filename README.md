@@ -32,6 +32,12 @@ Segmentation and trinary segmentation:\
 Analysis per n.. leaves:\
 ![image](https://user-images.githubusercontent.com/33765093/141840858-5bd3f3c4-cc22-4065-a5c5-dee293cfdf27.png)
 
+L*A*B Color Space Normalization:
+![LAB_A_space](https://github.com/megahitokiri/LISAT/assets/33765093/e1fe6b2e-3e1b-4d42-8773-ca2e013ff179)
+![LAB_B_space](https://github.com/megahitokiri/LISAT/assets/33765093/f0b2fa6d-7d04-49dc-8947-34b4454ab66e)
+![LAB_L_space](https://github.com/megahitokiri/LISAT/assets/33765093/41ede366-8c13-44e8-986e-be83badaff9f)
+
+
 Leaf 3 (example) Sectoring and Clasification
 ![leaf_2](https://github.com/megahitokiri/LISAT/assets/33765093/b8f87004-ca72-494d-9c7d-6e68186ccd80)
 
